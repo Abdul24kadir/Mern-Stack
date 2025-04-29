@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>css position property</h1>
+    <!-- 
+    css position properties are:
+    1.position = static (it is the default position for elements unless specified) 
+    in this we could not able to apply top,left,right,bottom values
+    
+    to change the values and position of the element in the window we have some other position properties
+    
+    2.position = relative 
+    - it is the position of the element with respective to the window .
+    - it can be used to overlap elements 
+    - its original gap space is still maintained
+    - it can respond to values of top,left,right,bottom
+    
+    3.position = absolute
+    - it is the position of the element with respective to the its nearest ancestor position
+    - i cann be used to overlap elements
+    - while overlapping the original gap space of the element is not maintained
+    - it will respond to the values of top,left,right,bottom
+    
+    4.position = fixed 
+    - it is ued to fix the element to window
+    - even when you scroll the web page the element is still fixed to that position 
+    - it will respond to top,bottom,left,right values
+    
+    5.position = sticky
+    - it is used to fix the element with respective to the presen/ancestor container
+    - it will be visible when you provide a position value for top,left,right,bottom
+    - it will not be sticked when you scroll to next container.-->
+    <div class="container">
+        <img src="img 1.jpeg" alt="image1" class="image1">
+        <img src="img 2.jpeg" alt="image2" class="image2">
+        <img src="img 3.jpeg" alt="image3" class="image3">
+        <img src="img 4.jpeg" alt="image4" class="image4">
+    </div>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

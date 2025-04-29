@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 2px solid black;
+            /* overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            or any fixed value like 200px */
+            overflow: hidden;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            border: 2px solid black;
+            background-color: aquamarine;
+            justify-content: start;
+            align-items: start;
+            align-content: start;
+            height: 800px;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        #box1 {
+            background-color: red;
+            /* order: 3; */
+            /* flex-basis: ; */
+            /* flex: 4 4 300px; */
+            /* flex-grow: 1; */
+        }
+
+        #box2 {
+            background-color: orange;
+            /* order: 1; */
+            /* flex-grow: 1; */
+        }
+
+        #box3 {
+            background-color: yellow;
+            /* order: 4; */
+            /* flex-grow: 1; */
+        }
+
+        #box4 {
+            background-color: green;
+            /* order: 2; */
+            /* flex-grow: 1; */
+           /* flex-shrink: 4; */
+           /* flex-basis: 300px; */
+           /* align-self:center; */
+           /* align self only works when align content is off */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flexbox</h1>
+    <div class="flexbox">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    <!-- 
+    learned topics :
+    flexbox inn css
+    for flex-container:
+    we have :
+    display=flex
+    flex-direction -says about flex diection
+    flex-wrap - wraps the content when the dimensions are changed for window screen
+    flex-flow - shorthand notation for flex
+    flexdirection | flex-wrap
+    justify-content-manages content in page 
+    align-items- aligns the items in page
+    align-content - sets the positiom of the content
+    
+    for flex-items :
+    flex-grow:rate of growth in wrap
+    flex-shrink - rate of shrink in nwrap
+    flex-basis - defines dimensions of the flex item
+    order - tells the order of flex , can be used in wrap
+    align-self - to align its position.-->
+
+
+</body>
+
+</html>

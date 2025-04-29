@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* min-width: 1300px; */
+            width: 100vw;
+            background-color: rgb(251, 255, 255);
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 20px;
+        }
+
+        .head {
+
+            font-family: 'Inter', sans-serif;
+
+            padding: 13px;
+            width: 38%;
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            /* background-color: aqua; */
+            text-align: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .head p {
+            color: rgb(83, 81, 81);
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            /* padding: 10px;
+            border: 2px solid black; */
+            /* height: 200px;
+            width: 100px; */
+            gap: 30px;
+            overflow: auto;
+        }
+
+        .mainitems {
+            height: 320px;
+            width: 250px;
+            /* background-color: aqua; */
+            border-radius: 8px;
+            border: 1px solid rgb(116, 111, 111);
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .item_head img {
+            width: 100%;
+            height: 160px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            position: relative;
+        }
+
+        .item_head:hover img {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+        }
+
+        .item_head {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .item_main {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            align-self: center;
+            height: 25%;
+            width: 90%;
+            /* background-color: aqua; */
+        }
+
+        .item_main h4 {
+            font-family: 'Inter', sans-serif;
+
+
+        }
+
+        .item_main p {
+            color: rgb(94, 90, 90);
+            font-size: 14px;
+        }
+
+        .item_foot {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: aqua; */
+        }
+
+        .left_foot {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .right_foot button {
+            width: 80px;
+            height: 60%;
+            background-color: azure;
+            border-radius: 3px;
+            border-color: rgb(184, 176, 176);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+        }
+
+        .foot_image {
+            height: 40%;
+        }
+
+        #name {
+            color: rgb(25, 0, 255);
+        }
+
+        #date {
+            font-size: 11px;
+            color: rgba(101, 97, 97, 0.817);
+        }
+
+        #button {
+            color: rgb(100, 96, 96);
+            height: 30px;
+            width: 90px;
+        }
+
+        @media (max-width:650px) {
+            .main {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .head {
+
+                font-size: small;
+
+                padding: 2px;
+                width: 80%;
+                height:100px;
+            }
+
+        }
+        @media (min-width:650px) {
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .head {
+
+                font-size: small;
+
+                padding: 2px;
+                width: 70%;
+                height:100px;
+            }
+
+        }
+        @media (min-width:1200px) {
+            .main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .head {
+
+                font-size: small;
+
+                padding: 2px;
+                width: 70%;
+                height:100px;
+            }
+
+        }
+        @media (min-width:1300px){
+            .main{
+                grid-template-columns: repeat(4,1fr);
+            }
+            .head{
+                width: 33%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <h1>CodeHelp Blogs</h1>
+            <p>Utilize this space to incorporate a captivating subheading crafted by ChatGPT,adding
+                depth and intrigue to your blog
+            </p>
+        </header>
+
+
+        <main class="main">
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="new gadgets released.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>New Gadgets Released</h4>
+                    <p>Checkout the latest gadgets hitting the market,from smartphones to smartwatches</p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">John Doe</p>
+                            <p id="date">September 19,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Tecnology</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="food.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Healthy Eating Tips</h4>
+                    <p>Discover simple tips for maintaining a healthy diet and making nutricious food choices</p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">Emily Smith</p>
+                            <p id="date">August 5,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Nutrition</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="image3.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Travel Bucket List</h4>
+                    <p>Explore breathtaking destinations and add them to your travel bucket list for an unforgettable
+                        adventure</p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">David Johnson</p>
+                            <p id="date">June 28,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Travel</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="time.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Effective Time management</h4>
+                    <p>Learn timem management techniques to boost productivity and balance work and personal life</p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">Sarah Wilson</p>
+                            <p id="date">september 12,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Productivity</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="mindfullmess.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Art of Mindfulness</h4>
+                    <p>Discover the power of mindfulness meditation for reducing stress and improving mental well-being
+                    </p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">Mark Anderson</p>
+                            <p id="date">July 19,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Mindfulness</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="decor.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Diy Home Decor</h4>
+                    <p>Get creative with DIY home decor projects that will transform your living space on a budget</p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">Laura Brown</p>
+                            <p id="date">August 20,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Home Decor</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="green.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>Green Energy Solutions</h4>
+                    <p>Explore eco-friendly energy solutions for a sustainable future and reducing your carbon footprint
+                    </p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">Micheal Turner</p>
+                            <p id="date">Sept 19,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Sustainability</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainitems">
+                <div class="item_head">
+                    <img src="8.jpg" alt="">
+                </div>
+                <div class="item_main">
+                    <h4>The Power of Positivity</h4>
+                    <p>Discover how a positive mindset can improve your life and lead to greater happiness and success
+                    </p>
+                </div>
+                <div class="item_foot">
+
+                    <div class="left_foot">
+                        <div class="foot_image">
+                            <img src="favicon.png" alt="">
+                        </div>
+                        <div>
+                            <p id="name">John Doe</p>
+                            <p id="date">October 10,2021</p>
+                        </div>
+                    </div>
+
+                    <div class="right_foot">
+                        <button id="button">Positvity</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </main>
+
+
+
+    </div>
+</body>
+
+</html>

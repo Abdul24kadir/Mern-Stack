@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Summary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #cce7df;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      width: 360px;
+      background-color: #e8f7f3;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img.hero {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .content {
+      padding: 20px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 15px 0 10px;
+    }
+    .description {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .plan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #d8f1e9;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+    }
+    .plan-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .plan img {
+      width: 30px;
+      height: 30px;
+    }
+    .plan-text {
+      text-align: left;
+    }
+    .plan-text .label {
+      font-weight: 600;
+    }
+    .plan-text .price {
+      font-size: 14px;
+      color: #333;
+    }
+    .change {
+      font-size: 13px;
+      color: #0056ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button {
+      background-color: #0d0d2b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    .cancel {
+      color: #0d0d2b;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="hero" src="icon.jpg" alt="Hero Image">
+    <div class="content">
+      <div class="title">Order Summary</div>
+      <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat aliquid assumenda, asperiores facilis ipsam?</div>
+      <div class="plan">
+        <div class="plan-info">
+          <img src="music.png" alt="music icon">
+          <div class="plan-text">
+            <div class="label">Annual plan</div>
+            <div class="price">$99.9/year</div>
+          </div>
+        </div>
+        <a href="#" class="change">change</a>
+      </div>
+      <button class="button">Proceed to Payment</button>
+      <div class="cancel">Cancel Order</div>
+    </div>
+  </div>
+</body>
+</html>

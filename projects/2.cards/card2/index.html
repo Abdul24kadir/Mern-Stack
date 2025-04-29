@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(203, 239, 227);
+        }
+
+        .card {
+            height: 500px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: azure;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 3px 3px 4px 4px rgb(82, 79, 79)
+        }
+        
+
+        .card img {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+        }
+        .card p{
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #amountbox{
+            background-color: rgb(203, 239, 227);
+            width: 80%;
+            height: 10%;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+        .card button{
+            width: 80%;
+            height: 10%;
+            border-radius: 8px;
+            background-color: rgb(26, 26, 71);
+            color: azure;
+        }
+        #cancle{
+            text-decoration: none;
+            color: black;
+            font-weight: 800;
+        }
+    .leftbox{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+    .rightbox{
+        margin-right: 10px;
+    }
+    #amountbox img{
+        height: 30px;
+        width: 30px;
+        /* margin-left: 6px; */
+    }
+    #amountbox a{
+        color: blue;
+    }
+    #amount text{
+        font-size: 14px;
+    }
+    .box{
+        height: 30px;
+        width: 30px;
+        background-color: rgb(236, 232, 226);
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        margin-left: 6px;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="icon.jpg" alt="">
+
+            <h2>Order Summary </h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat aliquid assumenda, asperiores
+                facilis ipsam?
+            </p>
+
+            <div id="amountbox">
+                <div class="leftbox">
+                    <div class="box"><img src="music.png" alt="music icon"></div>
+
+                <div id="amounttext">
+                    <p>Annual plan</p>
+                    <p>$99.9/year</p>
+                </div>
+                </div>
+                
+                <div class="rightbox">
+                    <a href="">change</a>
+                </div>
+
+            </div>
+
+            <button>Proceed to Payment</button>
+
+            <a href="#" id="cancle">Cancel Order</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+h1{
+    border: 2px solid black;
+    width: 400px;
+    background-color: blanchedalmond;
+}
+.container{
+    border: 2px solid black;
+    background-color: rgb(147, 97, 36);
+    height: 5000px;
+}
+img{
+    margin: 10px;
+    height: 183px;
+    width: 250px;
+}
+.image1{
+    position: relative;
+    top: 100px;
+    left: 140px;
+    /* overlapped with image2 wrt to the window */
+}
+.image3{
+    position: absolute;
+    top: 200px;
+}
+.image4{
+    position: fixed;
+    top: 200px;
+    right: 100px;
+}
+.image2{
+    position: sticky;
+    top: 120px;
+}
+.box{
+    background-color: rgb(5, 249, 168);
+    height: 4000px;
+}

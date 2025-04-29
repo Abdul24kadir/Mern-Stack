@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/* Container now uses padding for spacing instead of relying on fixed dimensions */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px; /* Added padding to prevent content from touching edges */
+}
+
+/* Made header width responsive */
+.head {
+    font-family: 'Inter', sans-serif;
+    padding: 13px;
+    width: 100%; /* Changed from 38% to full width */
+    max-width: 1000px; /* Keeps it centered and limited on wide screens */
+    height: auto; /* Removed fixed height for flexibility */
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head p {
+    color: rgb(83, 81, 81);
+    font-size: 1rem; /* Scales better on different screens */
+}
+
+/* Responsive grid layout using auto-fit to adapt to screen size */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ⚠️ Key Change: Makes it responsive */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Optional: Controls max width on big screens */
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Removed fixed height and width, now item scales within grid cell */
+.mainitems {
+    border-radius: 8px;
+    border: 1px solid rgb(116, 111, 111);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ⚠️ Key: Maintain image aspect ratio for responsiveness */
+.item_head img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* No change, hover effect still works */
+.item_head:hover img {
+    transform: scale(1.1);
+}
+
+.item_head {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Padding instead of fixed height for content */
+.item_main {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+}
+
+.item_main h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.item_main p {
+    color: rgb(94, 90, 90);
+    font-size: 0.9rem;
+}
+
+.item_foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Consistent image and spacing for avatar section */
+.left_foot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.foot_image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button adjusted to scale nicely */
+.right_foot button {
+    background-color: azure;
+    border-radius: 3px;
+    border: 1px solid rgb(184, 176, 176);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Font tweaks */
+#name {
+    color: rgb(25, 0, 255);
+    font-size: 0.9rem;
+}
+
+#date {
+    font-size: 0.75rem;
+    color: rgba(101, 97, 97, 0.817);
+}
+
+/* 🔽 Media Query: Adjust layout on smaller screens (e.g., phones/tablets) */
+@media (max-width: 768px) {
+    .head {
+        width: 90%; /* Slightly reduced width for small screens */
+    }
+
+    .main {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller cards fit better on phones */
+    }
+
+    .item_main p {
+        font-size: 0.85rem; /* Shrink text slightly */
+    }
+
+    .right_foot button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

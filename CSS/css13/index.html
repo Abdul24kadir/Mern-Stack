@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            border-radius:10px;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            /* animation: circle 5s ease-out 0s infinite alternate none; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* @keyframes circle {
+           from{
+            top:0;
+            left:0;
+           }
+           to{
+            top: 0;
+            left:1250px;
+           }
+        } */
+        h2{
+            visibility: hidden;
+            justify-content: center;
+            font-style:italic;
+            font-size: bold;
+            font-size: 20px;
+        }
+        body{
+            background-color: rgba(255, 228, 196, 0.708);
+        }
+        .container:hover {
+            background-color: rgb(0, 42, 255);
+            height: 400px;
+            width:400px;
+            border-radius: 400px;
+            /* visibility: visible; */
+        }
+        .container:hover h2{
+            visibility: visible;
+            align-self: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Transitions
+        <!-- change of css style from one style to another style -->
+    </h1>
+    <div class="container">
+        <h2>padle snap dekhne seh job nahi milegi</h2>
+    </div>
+</body>
+</html>

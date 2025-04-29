@@ -1,0 +1,53 @@
+.img1{
+    float: right;
+}
+.img2{
+    float: left;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: brown;
+}
+.container{
+    border: 2px solid green;
+    overflow:auto;
+}
+.box1{
+    margin-top: 20px;
+    border: 2px solid rgb(72, 255, 0);
+    padding: 15px;
+    /* float: right; */
+    overflow: auto;
+}
+#box11{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: brown;
+    float: inline-start;
+    overflow: auto;
+    margin: 3px;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    border: 2px solid olivedrab;
+    overflow: scroll;
+}
+.box4{
+    border: 2px solid orange;
+    background-color: aquamarine;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 12px;
+}
+.img3{
+    float: right;
+    
+}
+.img4{
+    float:right;
+    clear: right;
+}

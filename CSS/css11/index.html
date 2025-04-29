@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            --color_type:green;
+            background-color:var(--color_type);
+            border: 2px solid red;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin: 2px;
+            padding: 2px;
+        }
+        .box{
+            height:400px;
+            width: 400px;
+            background-color: bisque;
+            border: 2px solid green;
+            border-radius: 5px;
+            margin: 2px;
+            padding: 2px;
+            /* box-shadow: 12px 12px red; */
+            /* box-shadow: 10px 10px 3px green; */
+            /* box-shadow:-4px 10px green; */
+            /* box-shadow: inset 12px 21px 4px 5px red; */
+            /* box-shadow: 12px 12px 3px 5px red; */
+            box-shadow: 12px 12px  rgb(170, 120, 2);
+            /* box-shadow: 12px 12px red,12px 12px rgb(2, 0, 128),14px 14px orange; */
+        }
+        p{
+            border: 2px solid red;
+            border-radius: 5px;
+            margin: 2px;
+            padding: 2px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h2{
+            justify-self: center;
+            /* text-shadow: 12px 12px red; */
+            /* text-shadow: 10px 10px 3px green; */
+            /* text-shadow:-4px 10px green; */
+            /* text-shadow: 12px 21px 4px red; */
+            /* text-shadow: red 2px 3px; */
+            text-shadow: 2px 2px green , 3px 3px red , 4px 4px white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Shadow</h1>
+    <div class="container">
+        <div class="box">
+            <h2>welcome to mywebsite</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, deleniti minus eligendi animi rem possimus
+                minima modi eos fuga natus consectetur laudantium ea quibusdam magni accusamus illo. Quos cupiditate
+                sint inventore accusamus pariatur nobis esse error itaque et ipsam voluptates iusto consequuntur
+                necessitatibus, numquam minima quibusdam consectetur dolorem temporibus doloremque, exercitationem vitae
+                animi quo cum.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

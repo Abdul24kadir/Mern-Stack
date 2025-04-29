@@ -1,0 +1,32 @@
+h1{
+    border: 2px solid green;
+    background-color: aqua;
+    width: 50%;
+}
+.container{
+    border: 3px solid yellow;
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 200px;
+}
+.c{
+    background-color: aquamarine;
+    width: 13%;
+    height: 120px;
+}
+.box1{
+    border: 2px solid red;
+    width: 20vw;
+    height: 200vh;
+    background-color: blue;
+}
+.box2{
+    border: 2px solid red;
+    width: 20vw;
+    background-color: rgb(0, 255, 55);
+}
+.co{
+    font-size: 12em;
+}.d{
+    font-size: 2rem;
+}

@@ -1,0 +1,42 @@
+/* css fonts */
+#para1 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#para2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(71, 52, 3);
+}
+
+#para3 {
+    font-size: medium;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px
+}
+
+/* css color:
+1.rgb - red,green,blue(0,0,0)-(255,255,255)
+2.rgba- a refers to alpha - which tells opacity / transparency 
+3 hsl - hue,saturation,light
+4.hsla - a is alpha
+5 hex values - hex values are started from # and contains 6 values , if extra 2 are there then it is alpha value */
+
+/* 1.rgb , rgba */
+
+#para1 {
+    color: rgba(86, 112, 138, 0.7);
+}
+
+#para2 {
+    color: #a01616d2;
+}
+
+#para3 {
+    border: 2px solid blue;
+    background-color: hsla(23, 71%, 23%, 0.5);
+}
