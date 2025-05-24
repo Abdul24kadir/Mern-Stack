@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #6f6e6e;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #a19797;
+    --dark-gray: #555;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cde1f1;
+}
+.share-content{
+    background-color: #FFFFFF;
+    height: 60%;
+    width: 70%;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.share-box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+}
+.share-heading{
+    font-size: 1.7rem;
+    color: #2d4379e0;
+    font-weight: 600;
+}
+.cross-img{
+    height: 48%;
+}
+.share-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 2rem;
+    overflow: hidden;
+
+}
+.share-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 1rem;
+}
+.box3{
+    color: #2d437990;
+    font-weight:bold;
+}
+.box4{
+    background-color: #F5F7FA;
+    border-radius: 13px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+    
+.app-logo {
+    background-color: #F5F7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid transparent; 
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+#copy-img{
+    fill: orangered;
+    transition: stroke 0.3s ease;
+}
+.link-text{
+     transition: color 0.3s ease;
+}
+.link-text,.link-text2{
+    color: #2d4379e0;
+}
+.share-icons:hover .app-logo {
+    background-color: #fff3ed; /* Light orange */
+    border: 2px solid #F37453; /* Orange outline */
+}
+
+/* Make the icon orange */
+.share-icons:hover .app-logo {
+    fill: #F37453; /* Orange fill for SVG icon */
+}
+.share-icons:hover img{
+    filter: brightness(0) saturate(100%) invert(52%) sepia(84%) saturate(1582%) hue-rotate(329deg) brightness(105%) contrast(91%);
+}
+#copy-img:hover{
+     filter: brightness(0) saturate(100%) invert(52%) sepia(84%) saturate(1582%) hue-rotate(329deg) brightness(105%) contrast(91%);
+}
+/* Optional: orange text on hover */
+.share-icons:hover .link-text {
+    color: #F37453;
+}
+
